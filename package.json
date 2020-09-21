@@ -1,0 +1,26 @@
+{
+  "name": "http_simulator",
+  "version": "1.0.0",
+  "description": "This is a light HTTP Simulator that combines the use of [Axios](https://www.npmjs.com/package/axios) HTTP client and vanilla JavaScript as well as [jQuery](https://jquery.com) to implement its core functions.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "jquery": "^3.5.1",
+    "tailwindcss": "^1.8.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:tailwind": "tailwind build src/tailwind_src.css -o public/css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/destinybravos/http_simulator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/destinybravos/http_simulator/issues"
+  },
+  "homepage": "https://github.com/destinybravos/http_simulator#readme"
+}
