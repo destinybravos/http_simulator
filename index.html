@@ -7,18 +7,81 @@
     <link rel="shortcut icon" href="public/img/http.png" type="image/x-icon">
     <!-- Styles -->
     <link rel="stylesheet" href="public/css/tailwind.css">
+    <link rel="stylesheet" href="public/css/styles.css">
 
     <!-- Scripts -->
     <script src="./node_modules/axios/dist/axios.js"></script>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
 </head>
-<body>
-    <div class="w-full bg-blue-700 text-4xl text-white">
+<body class="bg-gray-900">
+    <header class="w-full shadow bg-blue-700 text-4xl text-white">
         <div class="container mx-auto p-3 flex">
             <div class="flex-1">
                 <img src="public/img/http_mg.png" class="h-12" alt="logo">
             </div>
         </div>
+    </header>
+
+    <div id="app-body">
+
+        <div class="container rounded p-1 bg-white mx-auto max-w-screen-lg max-w-md mt-8 font-sans" id="bd_con">
+            <form method="post" name="request_form">
+                <!-- Row 1 : Methods and URL -->
+                <div class="md:flex">
+                    <div class="md:flex-1 p-4">
+                        <label for="method" class="font-sans text-lg text-gray-800">
+                            Request Method
+                        </label>
+                        <select name="method" id="method" class="block appearance-none mt-1 shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                            <option value="get">GET Request</option>
+                            <option value="post">POST Request</option>
+                            <option value="put">PUT Request</option>
+                            <option value="delete">DELETE Request</option>
+                        </select>
+                    </div>
+                    <div class="md:flex-1 p-4">
+                        <label for="method" class="font-sans text-lg text-gray-800">
+                            Request URL
+                        </label>
+                        <input type="text" class="block mt-1 shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                    </div>
+                </div>
+
+                <!-- Row 2 : Navigation Tabs -->
+                <div class="md:flex">
+                    <ul class="flex border-b px-4 pt-4 w-full" id="tabs">
+                        <li class="-mb-px mr-1">
+                          <a data-target="#params" class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold" href="#"><small>Params</small></a>
+                        </li>
+                        <li class="mr-1 -mb-px">
+                          <a data-target="#headers" class="bg-white inline-block py-2 px-4 text-blue-500 rounded-t hover:text-blue-800 font-semibold" href="#"><small>Headers</small></a>
+                        </li>
+                        <li class="mr-1 -mb-px">
+                          <a data-target="#auth" class="bg-white inline-block py-2 px-4 text-blue-500 rounded-t hover:text-blue-800 font-semibold" href="#"><small>Authorization</small></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ROW 3 : Tab's Contents -->
+                <div class="md:flex">
+                    <!-- Tab Content 1 -->
+                    <div id="params" class="md:flex-1 p-4 hidden active tab-contents">
+                        Parameters
+                    </div>
+                    
+                    <!-- Tab Content 2 -->
+                    <div id="headers" class="md:flex-1 p-4 hidden tab-contents">
+                        Headers
+                    </div>
+
+                    <!-- Tab Content 3 -->
+                    <div id="auth" class="md:flex-1 p-4 hidden tab-contents">
+                        Authorization
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
     </div>
 
     <script src="public/js/script.js"></script>

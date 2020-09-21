@@ -1,0 +1,9 @@
+@media screen and (max-width:768px){
+    #bd_con{
+        max-width: 93% !important;
+    }
+}
+
+.hidden.active{
+    display: block !important;
+}
