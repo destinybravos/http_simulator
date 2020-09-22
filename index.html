@@ -65,18 +65,93 @@
                 <div class="md:flex">
                     <!-- Tab Content 1 -->
                     <div id="params" class="md:flex-1 p-4 hidden active tab-contents">
-                        Parameters
+                        <div class="grid grid-cols-4 gap-2">
+                            <!-- Row 1 -->
+                            <div class="col-span-1 p-4">
+                                Key
+                            </div>
+                            <div class="col-span-3 p-4">
+                                Value
+                            </div>
+                            <!-- Row 2 -->
+                            <div class="col-span-1">
+                                <input type="text" name="row_2Col_1" id="row_2Col_1" class="block mt-1 text-md shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md"> 
+                            </div>
+                            <div class="col-span-3">
+                                <input type="text" name="row_2Col_3" id="row_2Col_3" class="block mt-1 text-md shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                            </div>
+                            <!-- Row 3 -->
+                            <div class="col-span-1">
+                                <input type="text" name="row_3Col_1" id="row_3Col_1" class="block mt-1 text-md shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md"> 
+                            </div>
+                            <div class="col-span-3">
+                                <input type="text" name="row_3Col_3" id="row_3Col_3" class="block mt-1 text-md shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                            </div>
+                            <!-- Row 4 -->
+                            <div class="col-span-1">
+                                <input type="text" name="row_4Col_1" id="row_4Col_1" class="block mt-1 text-md shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md"> 
+                            </div>
+                            <div class="col-span-3">
+                                <input type="text" name="row_4Col_3" id="row_4Col_3" class="block mt-1 text-md shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- Tab Content 2 -->
                     <div id="headers" class="md:flex-1 p-4 hidden tab-contents">
-                        Headers
+                         
+                        <div class="md:flex">
+                            <div class="md:flex-1 p-4">
+                        <label for="accept" class="font-sans text-md text-gray-800">
+                            Accept  
+                        </label>
+                        <select name="accept" id="accept" class="block text-md appearance-none mt-1 shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                            <option value="">Application/Json</option>
+                            <option value="">Application/Json</option>
+                            <option value="">Application/Json</option>
+                            <option value="">Application/Json</option>
+                        </select>
+                            </div>
+                            <div class="md:flex-1 p-4">
+                                <label for="content_type" class="font-sans text-md text-gray-800">
+                                     Content Type 
+                                </label>
+                                <select name="content_type" id="content_type" class="block text-md appearance-none mt-1 shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                                    <option value="">Application/Json</option>
+                                    <option value="">Application/Json</option>
+                                    <option value="">Application/Json</option>
+                                    <option value="">Application/Json</option>
+                                </select>
+
+                            </div>
+
+                        </div>
                     </div>
 
                     <!-- Tab Content 3 -->
                     <div id="auth" class="md:flex-1 p-4 hidden tab-contents">
-                        Authorization
+                        
+                        <div class="md:flex">
+                            <div class="md:flex-1 p-4">
+                                <label for="authentication" class="font-sans text-md text-gray-800">
+                                     Authentication Type
+                                </label>
+                                <select name="authentication" id="authentication" class="block text-md appearance-none mt-1 shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                                    <option value="">No Authentication</option>
+                                    <option value="">No Authentication</option>
+                                    <option value="">No Authentication</option>
+                                </select>
+
+                            </div>
+                            <div class="md:flex-1 p-4">
+                                <label for="token" class="font-sans text-md text-gray-800">
+                                    Token
+                                </label>
+                                <input type="text" name="token" id="token" class="block mt-1 text-md shadow border rounded w-full py-1 px-3 text-gray-700 focus:outline-none focus:shadow-md">
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
                 <!-- ROW 4 : SUbmit Button -->
